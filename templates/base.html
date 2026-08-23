@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{static('css/normalize.css')}}">
+    <link rel="stylesheet" href="{{static('css/reset.css')}}">
+    <link rel="stylesheet" href="{{static('css/style.css')}}">
+    {% block css_files %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a class="logo-link" href="">
+                <img class="logo-img" src="{{static('images/Logo-Tik-Talk.svg')}}" alt="Tik-Talk">
+            </a>
+            <nav class="nav">
+                <ul class="header-list">
+                    <li class="header-ietm">
+                        <a class="header-link" href="{{url_for('home')}}">
+                            <img class="header-img" src="{{static('images/home.svg')}}" alt="Home">
+                            <p class="header-text">Моя страница</p>
+                        </a>
+                    </li>
+                    <li class="header-ietm">
+                        <a class="header-link" href="">
+                            <img class="header-img" src="{{static('images/chat.svg')}}" alt="Chat">
+                            <p class="header-text">Чаты</p>
+                        </a>
+                    </li>
+                    <li class="header-ietm">
+                        <a class="header-link" href="">
+                            <img class="header-img" src="{{static('images/search.svg')}}" alt="Search">
+                            <p class="header-text">Поиск</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
