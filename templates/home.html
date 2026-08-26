@@ -7,11 +7,36 @@
 {% block title %}Tik-Talk{% endblock title %} 
 
 {% block content %}
-    <section class="section-home">
-        <div class="container">
+    {% if show_content %}
+        <section class="section-home">
             <div class="content">
-                
+                <div class="content-box">
+                    <a class="content-box_link" href="">
+                        <img class="content-box_img" src="{{static('images/img.png')}}" alt="">
+                        <span class="content-box_span">
+                            <h1 class="content-box_title">Райан Гослинг</h1>
+                            <p class="content-box_text">ryan.gosling</p>
+                        </span>
+                    </a>
+                    <h2 class="conten-box__title">Навыки</h2>
+                    <span class="content-box__span">
+                        <a class="content-box__link" href="">JS</a>
+                        <a class="content-box__link" href="">CSS</a>
+                        <a class="content-box__link" href="">Angular</a>
+                    </span>
+                    <h3 class="content-box-title">О себе</h3>
+                    <p class="content-box-text">
+                        Список навыков, который мы обсудили выше, — основа резюме, но не единственная его часть. 
+                        Также можно рассказать о себе в классическом смысле — этот раздел можно добавить в сопроводительное письмо.
+                    </p>
+                </div>
             </div>
+        </section>
+    {% else %}
+        <!-- Пустая страница -->
+        <div style="text-align: center; padding: 50px;">
+            <h2>Добро пожаловать в Tik-Talk</h2>
+            <p>Нажмите "Моя страница", чтобы увидеть контент</p>
         </div>
-    </section>
+    {% endif %}
 {% endblock content %}
