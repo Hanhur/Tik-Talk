@@ -15,6 +15,11 @@ def home():
     return render_template('home.html', page = 'home', show_content = show_content)
 
 
+@app.route('/content')
+def contenrt():
+    return render_template('content.html')
+
+
 
 if __name__ == '__main__':
     app.run(debug = True, port = 5000)
