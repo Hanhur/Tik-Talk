@@ -12,7 +12,7 @@ def home():
     """Главная страница"""
     # Проверяем, была ли нажата ссылка "Моя страница"
     show_content = request.args.get('show', 'false') == 'true'
-    return render_template('home.html', page='home', show_content=show_content)
+    return render_template('home.html', page = 'home', show_content = show_content)
 
 
 
