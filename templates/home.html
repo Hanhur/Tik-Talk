@@ -31,6 +31,64 @@
                     </p>
                 </div>
             </div>
+            <div class="content-block">
+                <form class="conten-block_form">
+                    <div class="label-box">
+                        <label class= "label">Имя</label>
+                        <input class="input" type="text" placeholder="Райан">
+                    </div>
+                    <div class="label-box">
+                        <label class="label">Фамилия</label>
+                        <input class="input" type="text" placeholder="Гослинг">
+                    </div>
+                </form>
+                <form class="username">
+                    <label class="username_label">telegram username</label>
+                    <input class="username_input" type="text" placeholder="ryan.gosling">
+                </form>
+                <h2 class="contetn-block_title">О себе</h2>
+                <p class="contetn-block_text">
+                    Список навыков, который мы обсудили выше, — основа резюме, но не единственная его часть. 
+                    Также можно рассказать о себе в классическом смысле — этот раздел можно добавить в сопроводительное письмо.
+                </p>
+                <div class="avatar">
+                    <span class="avatar-span">Аватарка</span>
+                    <div class="avatar-box">
+                        <img class="avatar_img" src="{{static('images/img.png')}}" alt="Avatar">
+                        <div class="avatar-images">
+                            <img class="avatar-images_img" src="{{static('images/onDark.svg')}}" alt="onDark">
+                            <p class="avatar-images_text">
+                                Перетащите изображение или 
+                                <a href="">Загрузите</a> 
+                                (разрешение до 5,000 x 5,000 px)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="contetn-block-title">Навыки</h3>
+                <span class="content-block__span">
+                    <a class="content-block__link" href=""> X JS</a>
+                    <a class="content-block__link" href=""> X CSS</a>
+                    <a class="content-block__link" href=""> X Angular</a>
+                    <a class="content-block--link" href="">
+                        <img src="{{static('images/icon.svg')}}" alt="Icon">
+                    </a>
+                </span>
+                <div class="buttons">
+                    <div class="buttons_1">
+                        <button class="btn">
+                            <img class="buttons_1-btn" src="{{static('images/delete.svg')}}" alt="">
+                        </button>
+                        <button class="btn">
+                            <img class="buttons_1-btn" src="{{static('images/content.svg')}}" alt="">
+                        </button>
+                    </div>
+                    <div class="buttons_2">
+                        <button class="buttons_2-btn" type="submit">Отмена</button>
+                        <button class="buttons_2__btn" type="submit">Сохранить</button>
+                    </div>
+                </div>
+            </div>
         </section>
     {% else %}
         <!-- Пустая страница -->

@@ -16,8 +16,9 @@ def home():
 
 
 @app.route('/content')
-def contenrt():
-    return render_template('content.html')
+def content():
+    show_content = request.args.get('show', 'false') == 'true'
+    return render_template('content.html', page = 'content', show_content = show_content)
 
 
 
