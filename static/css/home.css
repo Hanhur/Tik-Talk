@@ -2,6 +2,10 @@
 {
     display: flex;
     padding: 24px;
+    background-image: url("../images/bitmap.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .content
@@ -92,6 +96,7 @@
     width: 664px;
     border-radius: 2px;
     border: 1px solid var(--color-White);
+    background-color: var(--color-Black);
 }
 
 .conten-block_form
