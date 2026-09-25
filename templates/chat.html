@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{{static('css/chat.css')}}" />
+{% endblock %} 
+
+{% block content %}
+    <div class="block-chat">
+        <table class="chat-table">
+            <tr class="chat-list">
+                <th class="chat-item">
+                    <a class="chat-link" href="">
+                        Искать...
+                        <img class="chat-img" src="{{static('images/search.svg')}}" alt="Search">
+                    </a>
+                </th>
+                <th class="chat_item">
+                    <button class="chat-btn" type="button">
+                        <img src="{{static('images/arrow-left.svg')}}" alt="Arrow Left">
+                    </button>
+                    <div class="chat-loken">
+                        <img class="chat-loken_img" src="{{static('images/subscribers/KristannaLoken.png')}}" alt="Kristanna Loken">
+                        <p>Кристанна Локен</p>
+                    </div>
+                    <button class="chat-btn" type="button">
+                        <img src="{{static('images/dot.svg')}}" alt="">
+                    </button>
+                </th>
+            </tr>
+            <tr class="chat-sara_list">
+                <td class="chat-sara_item">
+                    <img class="chat-sara_img" src="{{static('images/subscribers/SaraKonnor.png')}}" alt="Sara Konnor">
+                    <div>
+                        <span class="chat-sara_link">
+                            Сара Коннор
+                            <data class="chat-sara_date" value="">04.04.2024</data>
+                        </span>
+                        <span class="chat-sara_span">
+                            <p class="chat-sara_text">Терминаторы тестирую стенд, Готему нужен герой. За ангуляр только ты шаришь, хелп!</p>
+                            <span class="chat-sara_count">28</span>
+                        </span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+{% endblock %}

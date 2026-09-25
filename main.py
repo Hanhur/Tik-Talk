@@ -14,6 +14,11 @@ def home():
     show_content = request.args.get('show', 'false') == 'true'
     return render_template('home.html', page = 'home', show_content = show_content)
 
+@app.route('/chat')
+def chat():
+    show_content = request.args.get('show', 'false') == 'true'
+    return render_template('chat.html', page = 'chat', show_content = show_content)
+
 
 @app.route('/content')
 def content():
